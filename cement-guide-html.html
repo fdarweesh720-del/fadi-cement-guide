@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EN 197-1 Cement Standard - Interactive Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .title {
+            font-size: 3em;
+            font-weight: 700;
+            color: #667eea;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+            animation: slideDown 1s ease-out;
+        }
+        
+        .subtitle {
+            font-size: 1.5em;
+            color: #764ba2;
+            margin-bottom: 20px;
+            font-weight: 300;
+            animation: slideUp 1s ease-out 0.5s both;
+        }
+        
+        .author-credit {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: 500;
+            display: inline-block;
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+            animation: fadeIn 1s ease-out 1s both;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .author-credit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .section {
+            background: rgba(255, 255, 255, 0.9);
+            margin: 30px 0;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+        
+        .intro-text {
+            font-size: 1.2em;
+            text-align: center;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.95);
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5em;
+            }
+            
+            .subtitle {
+                font-size: 1.3em;
+            }
+            
+            .author-credit {
+                font-size: 1em;
+                padding: 12px 24px;
+            }
+            
+            .section {
+                padding: 30px 20px;
+            }
+            
+            .section h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">EN 197-1 Cement Standard</h1>
+        <p class="subtitle">Interactive Guide & Comprehensive Reference</p>
+        <div class="author-credit">
+            📋 Prepared by Mr. Fadi M. Darwesh 2025
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Welcome to the Interactive Cement Guide</h2>
+            <p class="intro-text">
+                This comprehensive guide provides detailed information about the EN 197-1 standard for cement 
+                composition, specifications, and conformity criteria. Explore the different types of cement, 
+                their properties, applications, and technical requirements in an easy-to-understand format.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Getting Started</h2>
+            <p class="intro-text">
+                Navigate through the various sections to learn about Portland cement types (CEM I-V), 
+                strength classes, chemical compositions, and testing requirements. Each section includes 
+                detailed specifications and practical applications for construction professionals.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 - EN 197-1 Cement Standard Guide | Prepared by Mr. Fadi M. Darwesh</p>
+        <p>Professional Reference for Construction Industry</p>
+    </div>
+
+    <script>
+        // Add smooth scrolling and interactive features
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('EN 197-1 Cement Guide loaded successfully');
+            console.log('Prepared by: Mr. Fadi M. Darwesh - 2025');
+        });
+    </script>
+</body>
+</html>

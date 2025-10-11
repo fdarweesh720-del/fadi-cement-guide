@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS EN 197-1:2011 - Cement Standards Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>BS EN 197-1:2011</h1>
+                <p class="header-subtitle">Cement Part 1: Composition, specifications and conformity criteria for common cements</p>
+                <div class="prepared-by-header">
+                    <span class="attribution">Prepared by Mr.Fadi M.Darwesh 2025</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#overview" class="nav-link active">Overview</a></li>
+                <li><a href="#cement-types" class="nav-link">Cement Types</a></li>
+                <li><a href="#strength-classes" class="nav-link">Strength Classes</a></li>
+                <li><a href="#constituents" class="nav-link">Constituents</a></li>
+                <li><a href="#requirements" class="nav-link">Requirements</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search standards..." class="search-input">
+                <button id="searchBtn" class="search-btn">🔍</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Overview Section -->
+        <section id="overview" class="section overview-section">
+            <div class="container">
+                <h2>Standard Overview</h2>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <h3>Scope</h3>
+                        <p>This standard covers 27 distinct common cements, 7 sulfate resisting common cements, and 3 low early strength blast furnace cements.</p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Publication Date</h3>
+                        <p>September 2011</p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Cement Types</h3>
+                        <p>5 main types: Portland, Portland Composite, Blast Furnace, Pozzolanic, and Composite Cements</p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Comprehensive composition requirements</li>
+                            <li>Performance criteria specifications</li>
+                            <li>Quality control measures</li>
+                            <li>Environmental considerations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cement Types Section -->
+        <section id="cement-types" class="section cement-types-section">
+            <div class="container">
+                <h2>Cement Types</h2>
+                <div class="cement-types-grid">
+                    <div class="cement-card" data-type="CEM_I">
+                        <div class="cement-header">
+                            <h3>CEM I - Portland Cement</h3>
+                            <div class="clinker-content">95-100% clinker</div>
+                        </div>
+                        <p>Pure Portland cement with at least 95% clinker content. Highest early strength development, suitable for general construction.</p>
+                        <div class="applications">
+                            <strong>Applications:</strong>
+                            <ul>
+                                <li>Structural concrete</li>
+                                <li>High-strength applications</li>
+                                <li>General construction</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn--primary view-details-btn" data-cement="CEM_I">View Details</button>
+                    </div>
+
+                    <div class="cement-card" data-type="CEM_II">
+                        <div class="cement-header">
+                            <h3>CEM II - Portland Composite</h3>
+                            <div class="clinker-content">65-94% clinker</div>
+                        </div>
+                        <p>Portland cement with various additives (slag, fly ash, limestone, etc.). Good durability, reduced heat of hydration.</p>
+                        <div class="applications">
+                            <strong>Applications:</strong>
+                            <ul>
+                                <li>General construction</li>
+                                <li>Marine structures</li>
+                                <li>Mass concrete</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn--primary view-details-btn" data-cement="CEM_II">View Details</button>
+                    </div>
+
+                    <div class="cement-card" data-type="CEM_III">
+                        <div class="cement-header">
+                            <h3>CEM III - Blast Furnace</h3>
+                            <div class="clinker-content">5-64% clinker</div>
+                        </div>
+                        <p>Cement with significant blast furnace slag content. Low heat of hydration, high sulfate resistance, slow early strength.</p>
+                        <div class="applications">
+                            <strong>Applications:</strong>
+                            <ul>
+                                <li>Mass concrete</li>
+                                <li>Marine environments</li>
+                                <li>Sulfate-aggressive conditions</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn--primary view-details-btn" data-cement="CEM_III">View Details</button>
+                    </div>
+
+                    <div class="cement-card" data-type="CEM_IV">
+                        <div class="cement-header">
+                            <h3>CEM IV - Pozzolanic</h3>
+                            <div class="clinker-content">45-89% clinker</div>
+                        </div>
+                        <p>Cement with pozzolanic materials (natural pozzolana, fly ash). Good long-term strength, reduced permeability.</p>
+                        <div class="applications">
+                            <strong>Applications:</strong>
+                            <ul>
+                                <li>Durable structures</li>
+                                <li>Chemical resistance applications</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn--primary view-details-btn" data-cement="CEM_IV">View Details</button>
+                    </div>
+
+                    <div class="cement-card" data-type="CEM_V">
+                        <div class="cement-header">
+                            <h3>CEM V - Composite</h3>
+                            <div class="clinker-content">20-64% clinker</div>
+                        </div>
+                        <p>Cement with combination of slag and pozzolanic materials. Very low heat of hydration, excellent durability.</p>
+                        <div class="applications">
+                            <strong>Applications:</strong>
+                            <ul>
+                                <li>Mass concrete</li>
+                                <li>Marine structures</li>
+                                <li>Long-term durability</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn--primary view-details-btn" data-cement="CEM_V">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strength Classes Section -->
+        <section id="strength-classes" class="section strength-section">
+            <div class="container">
+                <h2>Strength Classes</h2>
+                <div class="strength-overview">
+                    <div class="chart-container" style="position: relative; height: 400px;">
+                        <canvas id="strengthChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="strength-classes-grid">
+                    <div class="strength-card">
+                        <h3>Class 32.5</h3>
+                        <div class="strength-range">32.5 - 52.5 MPa</div>
+                        <p>Low strength class cement for general purpose and low-stress applications.</p>
+                        <div class="subclasses">
+                            <div class="subclass">
+                                <strong>32.5 N:</strong> ≥16.0 MPa at 7 days (Normal)
+                            </div>
+                            <div class="subclass">
+                                <strong>32.5 R:</strong> ≥10.0 MPa at 2 days (Rapid)
+                            </div>
+                            <div class="subclass">
+                                <strong>32.5 L:</strong> ≥12.0 MPa at 7 days (Low - CEM III only)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="strength-card">
+                        <h3>Class 42.5</h3>
+                        <div class="strength-range">42.5 - 62.5 MPa</div>
+                        <p>Medium strength class cement for structural concrete and general construction.</p>
+                        <div class="subclasses">
+                            <div class="subclass">
+                                <strong>42.5 N:</strong> ≥10.0 MPa at 2 days (Normal)
+                            </div>
+                            <div class="subclass">
+                                <strong>42.5 R:</strong> ≥20.0 MPa at 2 days (Rapid)
+                            </div>
+                            <div class="subclass">
+                                <strong>42.5 L:</strong> ≥16.0 MPa at 7 days (Low - CEM III only)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="strength-card">
+                        <h3>Class 52.5</h3>
+                        <div class="strength-range">≥52.5 MPa</div>
+                        <p>High strength class cement for high-strength concrete and precast elements.</p>
+                        <div class="subclasses">
+                            <div class="subclass">
+                                <strong>52.5 N:</strong> ≥20.0 MPa at 2 days (Normal)
+                            </div>
+                            <div class="subclass">
+                                <strong>52.5 R:</strong> ≥30.0 MPa at 2 days (Rapid)
+                            </div>
+                            <div class="subclass">
+                                <strong>52.5 L:</strong> ≥10.0 MPa at 2 days (Low - CEM III only)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Constituents Section -->
+        <section id="constituents" class="section constituents-section">
+            <div class="container">
+                <h2>Cement Constituents</h2>
+                <div class="constituents-grid">
+                    <div class="constituent-card">
+                        <div class="constituent-symbol">K</div>
+                        <h3>Portland Cement Clinker</h3>
+                        <p>Hydraulic material consisting of at least 2/3 calcium silicates</p>
+                        <div class="compounds">
+                            <strong>Key Compounds:</strong>
+                            <ul>
+                                <li>3CaO·SiO₂ (C₃S)</li>
+                                <li>2CaO·SiO₂ (C₂S)</li>
+                                <li>3CaO·Al₂O₃ (C₃A)</li>
+                                <li>4CaO·Al₂O₃·Fe₂O₃ (C₄AF)</li>
+                            </ul>
+                        </div>
+                        <div class="requirements">
+                            <strong>Requirements:</strong> CaO/SiO₂ ratio ≥ 2.0, MgO ≤ 5.0%
+                        </div>
+                    </div>
+
+                    <div class="constituent-card">
+                        <div class="constituent-symbol">S</div>
+                        <h3>Blast Furnace Slag</h3>
+                        <p>Rapidly cooled slag from blast furnace</p>
+                        <div class="composition">
+                            <strong>Composition:</strong> ≥2/3 by mass of CaO + MgO + SiO₂
+                        </div>
+                        <div class="requirements">
+                            <strong>Requirements:</strong> (CaO + MgO)/SiO₂ > 1.0
+                        </div>
+                    </div>
+
+                    <div class="constituent-card">
+                        <div class="constituent-symbol">P/Q</div>
+                        <h3>Pozzolanic Materials</h3>
+                        <p><strong>P:</strong> Natural volcanic materials<br>
+                        <strong>Q:</strong> Calcined volcanic materials, clays, shales</p>
+                        <div class="requirements">
+                            <strong>Requirements:</strong> Reactive SiO₂ ≥ 25.0%
+                        </div>
+                    </div>
+
+                    <div class="constituent-card">
+                        <div class="constituent-symbol">V/W</div>
+                        <h3>Fly Ash</h3>
+                        <p><strong>V:</strong> Siliceous fly ash with pozzolanic properties<br>
+                        <strong>W:</strong> Calcareous fly ash with hydraulic/pozzolanic properties</p>
+                        <div class="requirements">
+                            <strong>V Requirements:</strong> Reactive CaO < 10.0%, Free CaO ≤ 1.0%<br>
+                            <strong>W Requirements:</strong> Reactive CaO ≥ 10.0%
+                        </div>
+                    </div>
+
+                    <div class="constituent-card">
+                        <div class="constituent-symbol">L/LL</div>
+                        <h3>Limestone</h3>
+                        <p>Limestone with specific purity requirements</p>
+                        <div class="requirements">
+                            <strong>L:</strong> CaCO₃ ≥75%, TOC ≤0.50%<br>
+                            <strong>LL:</strong> CaCO₃ ≥75%, TOC ≤0.20%
+                        </div>
+                    </div>
+
+                    <div class="constituent-card">
+                        <div class="constituent-symbol">D</div>
+                        <h3>Silica Fume</h3>
+                        <p>Very fine spherical particles</p>
+                        <div class="requirements">
+                            <strong>Requirements:</strong> Amorphous SiO₂ ≥ 85%, Specific surface ≥ 15.0 m²/g
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirements Section -->
+        <section id="requirements" class="section requirements-section">
+            <div class="container">
+                <h2>Chemical & Physical Requirements</h2>
+                
+                <div class="requirements-tabs">
+                    <button class="tab-btn active" data-tab="chemical">Chemical Requirements</button>
+                    <button class="tab-btn" data-tab="physical">Physical Requirements</button>
+                    <button class="tab-btn" data-tab="sulfate">Sulfate Resistant</button>
+                </div>
+
+                <div class="tab-content" id="chemical-tab">
+                    <div class="requirements-grid">
+                        <div class="requirement-card">
+                            <h3>Loss on Ignition</h3>
+                            <div class="requirement-values">
+                                <div>CEM I: ≤5.0%</div>
+                                <div>CEM III: ≤5.0%</div>
+                            </div>
+                        </div>
+                        <div class="requirement-card">
+                            <h3>Insoluble Residue</h3>
+                            <div class="requirement-values">
+                                <div>CEM I: ≤5.0%</div>
+                                <div>CEM III: ≤5.0%</div>
+                            </div>
+                        </div>
+                        <div class="requirement-card">
+                            <h3>Sulfate Content (SO₃)</h3>
+                            <div class="requirement-values">
+                                <div>32.5, 42.5N: ≤3.5%</div>
+                                <div>42.5R, 52.5: ≤4.0%</div>
+                            </div>
+                        </div>
+                        <div class="requirement-card">
+                            <h3>Chloride Content</h3>
+                            <div class="requirement-values">
+                                <div>All cements: ≤0.10%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content hidden" id="physical-tab">
+                    <div class="requirements-grid">
+                        <div class="requirement-card">
+                            <h3>Initial Setting Time</h3>
+                            <div class="requirement-values">
+                                <div>32.5: ≥75 min</div>
+                                <div>42.5: ≥60 min</div>
+                                <div>52.5: ≥45 min</div>
+                            </div>
+                        </div>
+                        <div class="requirement-card">
+                            <h3>Soundness</h3>
+                            <div class="requirement-values">
+                                <div>≤10 mm expansion</div>
+                            </div>
+                        </div>
+                        <div class="requirement-card">
+                            <h3>Heat of Hydration (LH)</h3>
+                            <div class="requirement-values">
+                                <div>≤270 J/g at 7 days</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content hidden" id="sulfate-tab">
+                    <div class="requirements-grid">
+                        <div class="requirement-card">
+                            <h3>CEM I SR</h3>
+                            <div class="requirement-values">
+                                <div>SR 0: C₃A = 0%</div>
+                                <div>SR 3: C₃A ≤ 3%</div>
+                                <div>SR 5: C₃A ≤ 5%</div>
+                            </div>
+                        </div>
+                        <div class="requirement-card">
+                            <h3>CEM III SR</h3>
+                            <div class="requirement-values">
+                                <div>No C₃A requirement</div>
+                            </div>
+                        </div>
+                        <div class="requirement-card">
+                            <h3>CEM IV SR</h3>
+                            <div class="requirement-values">
+                                <div>C₃A ≤ 9%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>BS EN 197-1:2011</h3>
+                    <p>Cement Part 1: Composition, specifications and conformity criteria for common cements</p>
+                    <div class="footer-attribution">
+                        <span class="attribution">Prepared by Mr.Fadi M.Darwesh 2025</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#cement-types">Cement Types</a></li>
+                        <li><a href="#strength-classes">Strength Classes</a></li>
+                        <li><a href="#constituents">Constituents</a></li>
+                        <li><a href="#requirements">Requirements</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="cementModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="modalContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
